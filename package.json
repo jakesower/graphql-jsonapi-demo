@@ -1,0 +1,27 @@
+{
+  "name": "graphql-jsonapi-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@polygraph/graphql-adapter": "0.0.9",
+    "@polygraph/jsonapi-store": "0.0.6",
+    "@polygraph/schema-utils": "0.0.7",
+    "axios": "^0.19.2",
+    "fortune": "^5.5.17",
+    "fortune-http": "^1.2.26",
+    "fortune-json-api": "^2.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "babel-cli": "^6.26.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25"
+  }
+}

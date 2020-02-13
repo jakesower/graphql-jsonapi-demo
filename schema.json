@@ -1,0 +1,54 @@
+{
+  "title": "Subset of Josh's API",
+  "resources": {
+    "countries": {
+      "singular": "country",
+      "attributes": {
+        "name": { "type": "string" },
+        "flag": { "type": "string" },
+        "continent": { "type": "string" }
+      },
+      "relationships": {
+        "squads": {
+          "type": "squads",
+          "cardinality": "many",
+          "inverse": "country"
+        }
+      }
+    },
+
+    "squads": {
+      "singular": "squad",
+      "attributes": {
+        "year": { "type": "integer" },
+        "finish": { "type": "string" }
+      },
+      "relationships": {
+        "country": {
+          "type": "countries",
+          "cardinality": "one",
+          "inverse": "squads"
+        },
+        "players": {
+          "type": "players",
+          "cardinality": "many",
+          "inverse": "squads"
+        }
+      }
+    },
+
+    "players": {
+      "singular": "player",
+      "attributes": {
+        "name": { "type": "string" }
+      },
+      "relationships": {
+        "squads": {
+          "type": "squads",
+          "cardinality": "many",
+          "inverse": "players"
+        }
+      }
+    }
+  }
+}
