@@ -1,5 +1,5 @@
 {
-  "title": "Subset of Josh's API",
+  "title": "Tiny soccer API",
   "resources": {
     "countries": {
       "singular": "country",
