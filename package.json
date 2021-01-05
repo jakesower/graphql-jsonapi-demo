@@ -12,7 +12,7 @@
     "@polygraph/graphql-adapter": "0.0.9",
     "@polygraph/jsonapi-store": "0.0.6",
     "@polygraph/schema-utils": "0.0.7",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "fortune": "^5.5.17",
     "fortune-http": "^1.2.26",
     "fortune-json-api": "^2.2.3"
